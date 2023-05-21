@@ -1,0 +1,6 @@
+services:
+  api:
+    restart: always
+    image: hardikloriya/spring-security-jwt-refresh-token
+    ports:
+      - "8080:8080"
