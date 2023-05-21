@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "9467b7ae-a432-43aa-808f-6aab0db52eb2",
+		"name": "springboot-security-basic-auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Employee List",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "loriya",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "hardik",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/basic-auth/employees/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"basic-auth",
+						"employees",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "loriya",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "hardik",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Hardik\",\r\n    \"lastName\": \"Loriya\",\r\n    \"email\": \"hloriya@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/basic-auth/employees/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"basic-auth",
+						"employees",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
