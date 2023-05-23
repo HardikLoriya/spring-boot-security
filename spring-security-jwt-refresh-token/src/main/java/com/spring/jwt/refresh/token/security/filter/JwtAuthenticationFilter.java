@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.spring.jwt.refresh.token.common.TokenException;
+import com.spring.jwt.refresh.token.controller.ErrorHandler;
 import com.spring.jwt.refresh.token.security.TokenProvider;
-import com.spring.jwt.refresh.token.web.ErrorHandler;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

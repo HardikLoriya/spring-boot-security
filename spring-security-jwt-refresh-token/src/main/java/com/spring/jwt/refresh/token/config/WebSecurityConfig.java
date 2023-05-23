@@ -24,9 +24,9 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
+import com.spring.jwt.refresh.token.controller.ErrorHandler;
 import com.spring.jwt.refresh.token.security.filter.JwtAuthenticationFilter;
 import com.spring.jwt.refresh.token.service.UserService;
-import com.spring.jwt.refresh.token.web.ErrorHandler;
 
 @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)

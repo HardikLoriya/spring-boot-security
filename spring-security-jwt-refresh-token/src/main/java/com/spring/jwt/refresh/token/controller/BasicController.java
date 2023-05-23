@@ -1,4 +1,4 @@
-package com.spring.jwt.refresh.token.web;
+package com.spring.jwt.refresh.token.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;

@@ -12,12 +12,12 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.web.reactive.server.WebTestClient;
 
+import com.spring.jwt.refresh.token.model.ChangePasswordRequest;
+import com.spring.jwt.refresh.token.model.TokenResponse;
+import com.spring.jwt.refresh.token.model.UsernameAndPasswordRequest;
 import com.spring.jwt.refresh.token.persistance.user.UserEntity;
 import com.spring.jwt.refresh.token.persistance.user.UserRepository;
 import com.spring.jwt.refresh.token.security.TokenProvider;
-import com.spring.jwt.refresh.token.web.model.ChangePasswordRequest;
-import com.spring.jwt.refresh.token.web.model.TokenResponse;
-import com.spring.jwt.refresh.token.web.model.UsernameAndPasswordRequest;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class UserControllerTest {

@@ -1,4 +1,4 @@
-package com.spring.jwt.refresh.token.web;
+package com.spring.jwt.refresh.token.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.MediaType;
@@ -10,15 +10,15 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import com.spring.jwt.refresh.token.common.TokenException;
+import com.spring.jwt.refresh.token.model.RefreshTokenRequest;
+import com.spring.jwt.refresh.token.model.RefreshTokenResponse;
+import com.spring.jwt.refresh.token.model.TokenResponse;
+import com.spring.jwt.refresh.token.model.UsernameAndPasswordRequest;
 import com.spring.jwt.refresh.token.persistance.refresh.RefreshTokenEntity;
 import com.spring.jwt.refresh.token.persistance.user.UserEntity;
 import com.spring.jwt.refresh.token.security.TokenProvider;
 import com.spring.jwt.refresh.token.service.RefreshTokenService;
 import com.spring.jwt.refresh.token.service.UserService;
-import com.spring.jwt.refresh.token.web.model.RefreshTokenRequest;
-import com.spring.jwt.refresh.token.web.model.RefreshTokenResponse;
-import com.spring.jwt.refresh.token.web.model.TokenResponse;
-import com.spring.jwt.refresh.token.web.model.UsernameAndPasswordRequest;
 
 import javax.validation.Valid;
 

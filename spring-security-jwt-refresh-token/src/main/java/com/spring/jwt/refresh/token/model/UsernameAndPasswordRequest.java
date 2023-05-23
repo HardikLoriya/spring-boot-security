@@ -1,4 +1,4 @@
-package com.spring.jwt.refresh.token.web.model;
+package com.spring.jwt.refresh.token.model;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;

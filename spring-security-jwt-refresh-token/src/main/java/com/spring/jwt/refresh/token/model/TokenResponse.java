@@ -1,4 +1,4 @@
-package com.spring.jwt.refresh.token.web.model;
+package com.spring.jwt.refresh.token.model;
 
 import java.util.List;
 

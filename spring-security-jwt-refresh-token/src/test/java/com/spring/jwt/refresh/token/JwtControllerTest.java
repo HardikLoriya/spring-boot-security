@@ -11,11 +11,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.web.reactive.server.WebTestClient;
 
+import com.spring.jwt.refresh.token.model.RefreshTokenRequest;
+import com.spring.jwt.refresh.token.model.TokenResponse;
+import com.spring.jwt.refresh.token.model.UsernameAndPasswordRequest;
 import com.spring.jwt.refresh.token.persistance.user.UserEntity;
 import com.spring.jwt.refresh.token.persistance.user.UserRepository;
-import com.spring.jwt.refresh.token.web.model.RefreshTokenRequest;
-import com.spring.jwt.refresh.token.web.model.TokenResponse;
-import com.spring.jwt.refresh.token.web.model.UsernameAndPasswordRequest;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class JwtControllerTest {
